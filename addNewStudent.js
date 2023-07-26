@@ -31,4 +31,10 @@ async function addNewStudent() {
 }
 
 // Call the function to add the new student
-addNewStudent();
+app.get("/",(req,res)=>{
+
+   
+  res.send(addNewStudent());
+ 
+  console.log("record added to database")
+})
