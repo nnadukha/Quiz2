@@ -21,7 +21,7 @@ async function addNewStudent() {
     };
 
     // Create the new book document
-    const addedStudent = await quiz.create(newStudent);
+    const addedStudent = await quiz.insertMany(newStudent);
     console.log('New student added successfully:', addedStudent);
   } catch (err) {
     console.error('Error adding a new student:', err);
