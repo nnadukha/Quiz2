@@ -6,7 +6,7 @@ const quiz = require('./quizSchema'); // Import the quizSchema
 app.listen(3000, () => console.log('Listening on port 3000!'));
 
 //Connect to MongoDB server & create a database
-mongoose.connect('mongodb+srv://nnadukha:1234@exams23002.mjkpmsa.mongodb.net/?retryWrites=true&w=majority', {
+mongoose.connect('mongodb+srv://tempuser:123@cluster0.f9d6o.gcp.mongodb.net/Exams23002', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
